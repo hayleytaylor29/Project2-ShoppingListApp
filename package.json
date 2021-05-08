@@ -1,0 +1,26 @@
+{
+  "name": "project2-personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node web.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayleytaylor29/Project2-Personal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayleytaylor29/Project2-Personal/issues"
+  },
+  "homepage": "https://github.com/hayleytaylor29/Project2-Personal#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.12.7"
+  }
+}
