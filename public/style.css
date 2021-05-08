@@ -38,11 +38,11 @@ h1, h2 {
     
 
 }
-
+/* 
 .blur {
     backdrop-filter: blur(2px);
     filter: saturate(70%)
-}
+} */
 .showBack {
     background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-position: center;
