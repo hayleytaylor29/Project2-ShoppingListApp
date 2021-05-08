@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const PORT = process.env.MONGODB_URI || 3000;
+const PORT = process.env.PORT || 3000;
 const URI = process.env.MONGODB_URI;
 
 require('dotenv').config();
