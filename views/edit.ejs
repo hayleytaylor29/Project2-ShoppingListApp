@@ -9,21 +9,21 @@
     <div class="showBack">
     <h1>Edit List Page</h1>
     <form action="/<%=data.id%>?_method=PUT" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" value="<%=data.name%>"/><br>
-      <label for="store">Store</label>
-      <input type="text" name="store" value="<%=data.store%>"/><br>
-      <label for="item">Item</label>
-      <input type="text" name="item" value="<%=data.item%>"/><br>
-      <label for="qty">Quantity</label>
-      <input type="text" name="qty" value="<%=data.qty%>"/><br>
-      <label for="estPrice">Estimated Price</label>
-      <input type="text" name="estPrice" value="<%=data.estPrice%>"/><br>
-      <label for="comments">Comments</label>
-      <input type="text" name="comments" value="<%=data.comments%>"/><br>
-      <input type="submit" value="Update List">
+      <label for="name" class="text">Name:</label>
+      <input type="text" name="name" value="<%=data.name%>"/><br><br>
+      <label for="store" class="text">Store:</label>
+      <input type="text" name="store" value="<%=data.store%>"/><br><br>
+      <label for="item" class="text">Item:</label>
+      <input type="text" name="item" value="<%=data.item%>"/><br><br>
+      <label for="qty" class="text">Quantity:</label>
+      <input type="text" name="qty" value="<%=data.qty%>"/><br><br>
+      <label for="estPrice" class="text">Estimated Price:</label>
+      <input type="text" name="estPrice" value="<%=data.estPrice%>"/><br><br>
+      <label for="comments" class="text">Comments:</label>
+      <input type="text" name="comments" value="<%=data.comments%>"/><br><br>
+      <input type="submit" value="Update List"><br><br>
     </form>
-    <a href="/">Back to Main Page</a> <br>
+    <a href="/">Back to Main Page</a> <br><br>
   </div>
   </body>
 </html>

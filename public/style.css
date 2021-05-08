@@ -4,6 +4,8 @@ body {
     font-family: 'Krona One', sans-serif;
     background-color: rgba(241, 232, 228, 0.842);
     background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .create {
@@ -16,20 +18,27 @@ ul {
     list-style-type: none;
     margin: 40px;
     padding: 20px;
-    border: 2px solid black;
+    
 }
 
-h1, h2 {
+h1, h2, p {
     font-family: 'Krona One', sans-serif;
     /* border: 2px solid black; */
     margin: 40px;
     text-shadow: 2px 2px rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.text {
+    text-shadow: 2px 2px white;
+    color: black;
+    font-size: 15px;
 }
 
 .bottom {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 40px;
-    padding-top: 10px;
+    border: 2px solid black;
 }
 
 .background {
