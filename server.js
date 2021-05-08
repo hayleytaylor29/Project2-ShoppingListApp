@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const port = 3000;
+const PORT = process.env.MONGODB_URI || 3000;
+const URI = process.env.MONGODB_URI;
+
+require('dotenv').config();
 
 //MIDDLEWARE
 app.use(express.urlencoded({ extended: false }));
@@ -74,11 +77,11 @@ app.delete('/:id', (req, res) => {
 })
 
 
-app.listen(port, () => {
-    console.log('listening on port: ', port);
+app.listen(PORT, () => {
+    console.log('listening on port: ', PORT);
   });
 
-mongoose.connect('mongodb://localhost:27017/list', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
     console.log('connected to mongo');
 });

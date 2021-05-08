@@ -2,7 +2,7 @@
   "name": "project2-personal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node web.js"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hayleytaylor29/Project2-Personal#readme",
   "dependencies": {
+    "dotenv": "^9.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
