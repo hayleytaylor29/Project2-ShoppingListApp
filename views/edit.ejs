@@ -6,6 +6,7 @@
     <title>Edit Form</title>
   </head>
   <body>
+    <div class="showBack">
     <h1>Edit List Page</h1>
     <form action="/<%=data.id%>?_method=PUT" method="POST">
       <label for="name">Name</label>
@@ -22,6 +23,7 @@
       <input type="text" name="comments" value="<%=data.comments%>"/><br>
       <input type="submit" value="Update List">
     </form>
-    <a href="/">Back to Main Page</a>
+    <a href="/">Back to Main Page</a> <br>
+  </div>
   </body>
 </html>
