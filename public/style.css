@@ -22,7 +22,7 @@ h1, h2 {
     font-family: 'Krona One', sans-serif;
     /* border: 2px solid black; */
     margin: 40px;
-    text-shadow: 2px whitesmoke;
+    text-shadow: 10px whitesmoke;
 }
 
 .bottom {
