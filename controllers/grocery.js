@@ -12,6 +12,14 @@ router.post('/', (req,res) => {
         data: createdList;
     })
 })
+router.get('/:id', (req, res) => {
+    List.findById(req.params.id, (err, getList) => {
+        console.log(getList)
+        res.render('show.ejs', {
+            data: getList
+        })
+    })
+})
 
 
 module.exports = router;

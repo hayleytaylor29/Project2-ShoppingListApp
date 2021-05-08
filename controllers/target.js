@@ -2,15 +2,6 @@ const express = require('express');
 const router = express.Router();
 const List = require('../models/list.js');
 
-// router.get('/', (req, res) => {
-//     List.find({store: 'target'}, (error, targetData) => {
-//         console.log(targetData)
-//     res.render('index.ejs', {
-//         data: targetData
-//         })
-//     })
-// })
-
 router.get('/', (req, res) => {
     res.render('newTarget.ejs')
 })
