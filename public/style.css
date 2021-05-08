@@ -28,6 +28,7 @@ h1, h2 {
 .bottom {
     border: 2px solid black;
     margin: 40px;
+    padding-top: 10px;
 }
 
 .background {
@@ -48,4 +49,8 @@ h1, h2 {
     background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-position: center;
     background-size: 100% auto;
+}
+
+a.hover {
+    color: white;
 }
