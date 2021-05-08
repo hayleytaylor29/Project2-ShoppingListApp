@@ -53,11 +53,12 @@ h1, h2 {
 
 a {
     color: black;
-    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-decoration: none;
     
 }
 
-a.hover {
+a:hover {
     color: white;
-    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(255, 255, 255);
 }
