@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Your Shopping List</title>
+    <title>Shopping List</title>
 </head>
 <body>
-    <div class="background">
-    <h1>Your Shopping List App</h1>
-    <h2>Choose your store below to create a new list!</h2>
-    <div class='create'>
-        <a href="/new-grocery">Grocery Store</a><br><br>
-        <a href="/new-drugstore">Drug Store</a><br><br>
-        <a href="/new-target">Target</a><br><br>
-    
+    <div class="header">
+        <h1>Shopping List App</h1>
+    </div>
+    <div class="create">
+        <h2 class="h2">Click a store below to create a new list!</h2>
+        <a href="/new-grocery" class="new">Grocery Store</a><br><br>
+        <a href="/new-drugstore" class="new">Drug Store</a><br><br>
+        <a href="/new-target" class="new">Target</a><br><br>
 </div>
     <div class='bottom'>
-    <h2>Your Saved Lists</h2>
-    <ul>
-        <% for (let i = 0; i < data.length; i++) { %>
-            <% console.log(data[i].name) %>
-          <li>  <a href="/<%=data[i].id%>"><%= data[i].name %></a> <br>
-                <a href="/<%=data[i].id%>/edit">Edit</a>
-                <form action="/<%=data[i].id%>?_method=DELETE" method="POST">
-                    <input type='submit' value='Delete'/> <br> <br>
-                </form>
-        </li>
-        <%}%>
-    </ul>
-</div>
-</div>
+        <h2>Your Saved Lists</h2>
+        <ul>
+            <% for (let i = 0; i < data.length; i++) { %>
+                <% console.log(data[i].name) %>
+            <li>  <a href="/<%=data[i].id%>"><%= data[i].name %></a> <br>
+                    <a href="/<%=data[i].id%>/edit">Edit</a>
+                    <form action="/<%=data[i].id%>?_method=DELETE" method="POST">
+                        <input type="submit" value="Delete" class="button"/> <br> <br>
+                    </form>
+            </li>
+         <%}%>
+     </ul>
+    </div>
+<footer>Created by Hayley Taylor for General Assembly 2021 &copy;</footer>
 </body>
 </html>

@@ -6,7 +6,6 @@
     <title>Edit Form</title>
   </head>
   <body>
-    <div class="showBack">
     <h1>Edit List Page</h1>
     <form action="/<%=data.id%>?_method=PUT" method="POST">
       <label for="name" class="text">Name:</label>
@@ -21,9 +20,9 @@
       <input type="text" name="estPrice" value="<%=data.estPrice%>"/><br><br>
       <label for="comments" class="text">Comments:</label>
       <input type="text" name="comments" value="<%=data.comments%>"/><br><br>
-      <input type="submit" value="Update List"><br><br>
+      <input type="submit" value="Update List" class="button"><br><br>
     </form>
-    <a href="/">Back to Main Page</a> <br><br>
-  </div>
+    <a href="/" class="home">Back to Main Page</a> <br><br>
+    <footer>Created by Hayley Taylor for General Assembly 2021 &copy;</footer>
   </body>
 </html>

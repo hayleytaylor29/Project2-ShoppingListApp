@@ -8,67 +8,87 @@ body {
     background-size: 100% auto;
 }
 
+p, .text {
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.header {
+    border: 2px solid black;
+    margin: 20px;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.h2, h2 {
+    font-family: 'Krona One', sans-serif;
+    margin: 20px;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-size: 26px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
 .create {
     border: 2px solid black;
-    margin: 40px;
-    padding-top: 20px;
+    margin: 20px;
+}
+
+.new {
+    font-size: 23px;
 }
 
 ul {
     list-style-type: none;
-    margin: 40px;
-    padding: 20px;
-    
-}
-
-h1, h2, p {
-    font-family: 'Krona One', sans-serif;
-    /* border: 2px solid black; */
-    margin: 40px;
-    text-shadow: 2px 2px rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-.text {
-    text-shadow: 2px 2px white;
-    color: black;
-    font-size: 15px;
+    padding: 5px;
 }
 
 .bottom {
-    /* border: 2px solid black; */
-    margin: 40px;
+    margin: 20px;
     border: 2px solid black;
-}
-
-.background {
-    background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-position: center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    border: 2px solid black;
-    
-
-}
-/* 
-.blur {
-    backdrop-filter: blur(2px);
-    filter: saturate(70%)
-} */
-.showBack {
-    background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-position: center;
-    background-size: 100% auto;
+    font-size: 20px;
 }
 
 a {
-    color: black;
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
     text-decoration: none;
-    
 }
 
 a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.home {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.home:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+footer {
+    font-size: small;
     color: white;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }

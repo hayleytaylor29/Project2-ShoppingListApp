@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req,res) => {
+    console.log(req.body);
     List.create(req.body, (error, createdList) => {
-        console.log(createdList);
         res.redirect('/');
         data: createdList;
     })
