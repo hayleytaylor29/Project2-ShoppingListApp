@@ -1,5 +1,5 @@
 {
-  "name": "project2-personal",
+  "name": "project2-copy",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hayleytaylor29/Project2-Personal.git"
+    "url": "git+https://github.com/hayleytaylor29/Project2-Copy.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hayleytaylor29/Project2-Personal/issues"
+    "url": "https://github.com/hayleytaylor29/Project2-Copy/issues"
   },
-  "homepage": "https://github.com/hayleytaylor29/Project2-Personal#readme",
+  "homepage": "https://github.com/hayleytaylor29/Project2-Copy#readme",
   "dependencies": {
     "dotenv": "^9.0.0",
     "ejs": "^3.1.6",

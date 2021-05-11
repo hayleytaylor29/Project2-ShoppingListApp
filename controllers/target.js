@@ -10,7 +10,7 @@ router.post('/', (req,res) => {
     console.log(req.body);
     List.create(req.body, (error, createdList) => {
         res.redirect('/');
-        data: createdList;
+        data: createdList
     })
 })
 

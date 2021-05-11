@@ -18,8 +18,6 @@ const drugController = require('./controllers/drug.js');
 app.use('/new-drugstore', drugController)
 const groceryController = require('./controllers/grocery.js');
 app.use('/new-grocery', groceryController)
-// const otherController = require('./controllers/other.js');
-// app.use('/new-other', otherController)
 const targetController = require('./controllers/target.js');
 app.use('/new-target', targetController)
 //REQUIRE SCHEMA
@@ -35,15 +33,6 @@ app.get('/seedList', (req, res) => {
     })
 })
 
-//index route
-app.get('/', (req, res) => {
-    List.find({}, (error, allData) => {
-    res.render('index.ejs', {
-        data: allData
-        })
-    })
-})
-
 // show route
 app.get('/:id', (req, res) => {
     List.findById(req.params.id, (err, getList) => {
@@ -53,6 +42,16 @@ app.get('/:id', (req, res) => {
         })
     })
 })
+
+//index route
+app.get('/', (req, res) => {
+    List.find({}, (error, allData) => {
+    res.render('index.ejs', {
+        data: allData
+        })
+    })
+})
+
 
 //update route
 app.get('/:id/edit', (req, res) => {
